@@ -4,4 +4,4 @@ Sivuston on ihan todellinen joka tulee palvelemaan itseäni yhden harrastuksen p
 
 Sivuston hyöty tulee olemaan tilastot joukkueiden peleistä joiden pohjalta vedot tullaan lyömään kun kertoin on sopiva eli ylikerroin.
 
-Sivuston toimivuus on testattu https://validator.w3.org/ validaattorilla
+Sivuston toimivuus on testattu https://validator.w3.org/ validaattorilla.
