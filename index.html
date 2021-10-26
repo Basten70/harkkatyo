@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, inital-scale=1.0">
+        <title>Harkkatyö</title>
+        <script type="text/javascript" src="js.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+    <body>
+        <nav class="tt-sidebar tt-green tt-collapse tt-top tt-large tt-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+            <a href="javascript:void(0)" onclick="tt_close()" class="tt-button tt-hide-large tt-display-topleft" style="width:100%;font-size:22px">Sulje valikko</a>
+            <section id="search" class="alt">
+              <form method="post" action="#">
+                <input type="text" name="etsi" id="etsi" placeholder="Etsi" />
+              </form>
+            </section>
+            <div class="tt-bar-block">
+              <a href="#" onclick="tt_close()" class="tt-bar-item tt-button tt-hover-white">Alku</a>
+              <a href="#jalkapallo" onclick="tt_close()" class="tt-bar-item tt-button tt-hover-white">Jalkapallo</a>
+              <a href="#jaakiekko" onclick="tt_close()" class="tt-bar-item tt-button tt-hover-white">Jääkiekko</a> 
+              <a href="#pesapallo" onclick="tt_close()" class="tt-bar-item tt-button tt-hover-white">Pesäpallo</a> 
+              <a href="#linkkeja" onclick="tt_close()" class="tt-bar-item tt-button tt-hover-white">Linkkejä</a> 
+              <a href="#vedonlyontitoimistot" onclick="tt_close()" class="tt-bar-item tt-button tt-hover-white">Vedonlyöntitoimistot</a>
+            </div>
+          </nav>
+          
+          <header class="tt-container tt-top tt-hide-large tt-green tt-xlarge tt-padding">
+            <a href="javascript:void(0)" class="tt-button tt-green tt-margin-right" onclick="tt_open()">☰</a>
+          </header>
+          
+          <div class="tt-overlay tt-hide-large" onclick="tt_close()" style="cursor:pointer" title="sulje valikko" id="myOverlay"></div>
+          
+          <div class="tt-main" style="margin-left:340px;margin-right:40px">
+            
+            <script>  
+              var date=new Date();
+              document.write("<br><b>Tänään on "+date.getDate()+"."+(date.getMonth()+1)+"."+date.getFullYear()+"</b>");  
+              </script>  
+            
+            <div class="tt-container" id="jalkapallo" style="margin-top:75px">
+              <h1 class="tt-xxxlarge tt-text-green"><b>Jalkapallo</b></h1>
+              <p>
+                
+                
+              <p>
+            </div>
+            
+            <div class="tt-container" id="jaakiekko" style="margin-top:75px">
+              <h1 class="tt-xxxlarge tt-text-green"><b>Jääkiekko</b></h1>
+              <p></p>
+            </div>
+          
+            <div class="tt-container" id="pesapallo" style="margin-top:75px">
+              <h1 class="tt-xxxlarge tt-text-green"><b>Pesäpallo</b></h1>
+              <p>
+                <table>
+                  <caption>Sarjataulukko</caption>
+                  <thead>
+                  <tr>
+                      <th>Sija</th>
+                      <th>Joukkue</th>
+                      <th>O</th>
+                      <th>V</th>
+                      <th>T</th>
+                      <th>H</th>
+                      <th>3P</th>
+                      <th>2P</th>
+                      <th>1P</th>
+                      <th>0P</th>
+                      <th>Juoksut</th>
+                      <th>P</th>
+                      <th>PPO</th>
+                  </tr>
+                  </thead>
+                  <tr>
+                      <td>1</td>
+                      <td><a href="#mansepp">Manse PP</a></td>
+                      <td>27</td>
+                      <td>22</td>
+                      <td>0</td>
+                      <td>5</td>
+                      <td>13</td>
+                      <td>9</td>
+                      <td>4</td>
+                      <td>1</td>
+                      <td>303-138</td>
+                      <td>61</td>
+                      <td>2,26</td>
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td>Vimpelin Veto</td>
+                      <td>28</td>
+                      <td>21</td>
+                      <td>0</td>
+                      <td>7</td>
+                      <td>19</td>
+                      <td>2</td>
+                      <td>2</td>
+                      <td>5</td>
+                      <td>313-139</td>
+                      <td>63</td>
+                      <td>2,25</td>
+                  </tr>
+                  <tr>
+                      <td>3</td>
+                      <td>Kouvolan Pallonlyöjät</td>
+                      <td>27</td>
+                      <td>21</td>
+                      <td>0</td>
+                      <td>6</td>
+                      <td>12</td>
+                      <td>9</td>
+                      <td>3</td>
+                      <td>3</td>
+                      <td>213-152</td>
+                      <td>57</td>
+                      <td>2,11</td>
+                  </tr>
+                  <tr>
+                      <td>4</td>
+                      <td>Sotkamon Jymy</td>
+                      <td>28</td>
+                      <td>21</td>
+                      <td>0</td>
+                      <td>7</td>
+                      <td>15</td>
+                      <td>6</td>
+                      <td>1</td>
+                      <td>6</td>
+                      <td>276-163</td>
+                      <td>58</td>
+                      <td>2,07</td>
+                  </tr>
+                  <tr>
+                      <td>5</td>
+                      <td>Joensuun Maila</td>
+                      <td>28</td>
+                      <td>17</td>
+                      <td>0</td>
+                      <td>11</td>
+                      <td>8</td>
+                      <td>9</td>
+                      <td>3</td>
+                      <td>8</td>
+                      <td>204-177</td>
+                      <td>45</td>
+                      <td>1,61</td>
+                  </tr>
+                  <tr>
+                      <td>6</td>
+                      <td>Kempeleen Kiri</td>
+                      <td>26</td>
+                      <td>14</td>
+                      <td>0</td>
+                      <td>12</td>
+                      <td>6</td>
+                      <td>8</td>
+                      <td>3</td>
+                      <td>9</td>
+                      <td>152-146</td>
+                      <td>37</td>
+                      <td>1,42</td>
+                  </tr>
+                  <tr>
+                      <td>7</td>
+                      <td>Imatran Pallo-Veikot</td>
+                      <td>22</td>
+                      <td>10</td>
+                      <td>0</td>
+                      <td>12</td>
+                      <td>5</td>
+                      <td>5</td>
+                      <td>6</td>
+                      <td>6</td>
+                      <td>149-177</td>
+                      <td>31</td>
+                      <td>1,41</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>Pattijouen Urheilijat</td>
+                    <td>25</td>
+                    <td>13</td>
+                    <td>0</td>
+                    <td>12</td>
+                    <td>4</td>
+                    <td>9</td>
+                    <td>4</td>
+                    <td>8</td>
+                    <td>147-164</td>
+                    <td>34</td>
+                    <td>1,36</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>Hyvinkään Tahko</td>
+                    <td>27</td>
+                    <td>13</td>
+                    <td>0</td>
+                    <td>14</td>
+                    <td>7</td>
+                    <td>6</td>
+                    <td>3</td>
+                    <td>11</td>
+                    <td>211-203</td>
+                    <td>36</td>
+                    <td>1,33</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>Seinäjoen JymyJussit</td>
+                    <td>28</td>
+                    <td>15</td>
+                    <td>0</td>
+                    <td>13</td>
+                    <td>4</td>
+                    <td>11</td>
+                    <td>3</td>
+                    <td>10</td>
+                    <td>173-197</td>
+                    <td>37</td>
+                    <td>1,32</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>Kiteen Pallo-90</td>
+                    <td>28</td>
+                    <td>10</td>
+                    <td>0</td>
+                    <td>18</td>
+                    <td>4</td>
+                    <td>6</td>
+                    <td>8</td>
+                    <td>10</td>
+                    <td>195-249</td>
+                    <td>32</td>
+                    <td>1,14</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>Koskenkorvan Urheilijat</td>
+                    <td>27</td>
+                    <td>9</td>
+                    <td>0</td>
+                    <td>18</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>14</td>
+                    <td>166-224</td>
+                    <td>26</td>
+                    <td>0,96</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>Kankaanpään Maila</td>
+                    <td>27</td>
+                    <td>6</td>
+                    <td>0</td>
+                    <td>21</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>7</td>
+                    <td>14</td>
+                    <td>141-230</td>
+                    <td>21</td>
+                    <td>0,78</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>Siilinjärven Pesis</td>
+                    <td>26</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>22</td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>5</td>
+                    <td>17</td>
+                    <td>123-278</td>
+                    <td>15</td>
+                    <td>0,58</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>Haminan Palloilijat</td>
+                    <td>24</td>
+                    <td>3</td>
+                    <td>0</td>
+                    <td>21</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>4</td>
+                    <td>17</td>
+                    <td>126-255</td>
+                    <td>11</td>
+                    <td>0,46</td>
+                  </tr>
+              </table>
+            </div>
+            <div class="tt-container" id="mansepp" style="margin-top:75px">
+              <table>
+                <caption>Manse PP:n runkosarjan ottelut</caption>
+                <thead>
+                  <tr>
+                      <th>Päivä</th>
+                      <th>Kotijoukkue</th>
+                      <th></th>
+                      <th>Vierasjoukkue</th>
+                      <th>Kotij. jaksot</th>
+                      <th></th>
+                      <th>Vierasj. jaksot</th>
+                      <th>Kotij. juoksut</th>
+                      <th></th>
+                      <th>Vierasj. juoksut</th>
+                      
+                  </tr>
+                  </thead>
+                <tr>
+                  <td>4.6.2021</td>
+                  <td>Manse PP</td>
+                  <td>-</td>
+                  <td>Hyvinkään Tahko</td>
+                  <td>2</td>
+                  <td>-</td>
+                  <td>0</td>
+                  <td>9</td>
+                  <td>-</td>
+                  <td>4</td>
+                </tr>
+                <tr>
+                  <td>6.6.2021</td>
+                  <td>Pattijoen Urheilijat</td>
+                  <td>-</td>
+                  <td>Manse PP</td>
+                  <td>0</td>
+                  <td>-</td>
+                  <td>2</td>
+                  <td>2</td>
+                  <td>-</td>
+                  <td>5</td>
+                  
+                </tr>
+                <tr>
+                  <td>11.6.2021</td>
+                  <td>Manse PP</td>
+                  <td>-</td>
+                  <td>Joensuun Maila</td>
+                  <td>2</td>
+                  <td>-</td>
+                  <td>0</td>
+                  <td>10</td>
+                  <td>-</td>
+                  <td>7</td>
+                  
+                </tr>
+                <tr>
+                  <td>...</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td>24.8.2021</td>
+                  <td>Manse PP</td>
+                  <td>-</td>
+                  <td>Vimpelin Veto</td>
+                  <td>1</td>
+                  <td>-</td>
+                  <td>2</td>
+                  <td>7</td>
+                  <td>-</td>
+                  <td>3</td>
+                  
+                </tr>
+              </table>
+            </div>
+            
+            <div class="tt-container" id="linkkeja" style="margin-top:75px">
+              <h1 class="tt-xxxlarge tt-text-green"><b>Linkkejä</b></h1>
+              <p></p>
+            </div>
+              
+            <div class="tt-container" id="vedonlyontitoimistot" style="margin-top:75px">
+              <h1 class="tt-xxxlarge tt-text-green"><b>Vedonlyöntitoimistot</b></h1>
+              <p>Vedonlyöntitoimistot</p>
+            </div>
+          
+          </div>
+          
+    </body>
+</html>
